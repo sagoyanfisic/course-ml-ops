@@ -1,20 +1,20 @@
 from src import math_func
 
 
-# @pytest.mark.number
-# @pytest.mark.skip(reason="no ejecutar esto")
+@pytest.mark.number
+@pytest.mark.skip(reason="no ejecutar esto")
 def test_add():
     assert math_func.add(7, 3) == 10
     assert math_func.add(7) == 9
 
 
-# @pytest.mark.number
+@pytest.mark.number
 def test_product():
     assert math_func.product(5, 5) == 25
     assert math_func.product(5) == 10
 
 
-# @pytest.mark.strings
+@pytest.mark.strings
 def test_add_strings():
     result = math_func.add('Hello', ' World')
     assert result == 'Hello World'
@@ -22,7 +22,7 @@ def test_add_strings():
     assert 'Hello' in result
 
 
-# @pytest.mark.strings
+@pytest.mark.strings
 def test_product_strings():
     assert math_func.product('Hello ', 3) == 'Hello Hello Hello '
     result = math_func.product('Hello ')
