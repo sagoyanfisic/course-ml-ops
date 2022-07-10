@@ -1,5 +1,6 @@
-from src import math_func
+import pytest
 
+from src import math_func
 
 @pytest.mark.number
 @pytest.mark.skip(reason="no ejecutar esto")
